@@ -1,0 +1,57 @@
+header{
+    background-color: #f5ebe0;
+}
+header h1{
+    text-align: center;
+    background-color:#000;
+    color: blanchedalmond ;;
+    height: 65px;
+}
+body {
+    background-color: snow;
+    font-family: Arial, sans-serif;
+    margin: 40px;
+
+}
+nav{
+    background-color: #696969;
+}
+nav ul {
+    background-color: #a3b18a;
+}
+
+section {
+    background-color: #333	;
+    color: #fff;
+    text-align: center;
+}
+
+section article p {
+    background-color: #006400;
+}
+
+section > p {
+    background-color: #fff;
+    color: #333;
+}
+
+article {
+    background-color: #2E8B57	;
+    font-size: 16px;
+}
+
+.short-text {
+    display: inline;
+}
+
+.lorem-ipsum {
+    text-align: justify;
+}
+
+.paragraph {
+    background-color: #F5DEB3;
+    color: black;
+}
+h2{
+    background-color: #3CB371	;
+}
