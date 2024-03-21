@@ -1,40 +1,72 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Home page</title>
-		
-		<style>
-			a {
+<head>
+    <style>
+        	a {
 				text-decoration: none;
 				font-size: 16px;
 				font-weight: bold;
 			}
-			button {
+        body{
+            height: 100vh;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            background-color: #333333;
+        }
+       button{
 				padding: 5px;
-				margin: 5px; 
-			}
-		</style>
-	</head>
-	<body>
-		<button>
-			<a href="https://progcourse.github.io">Programing Course</a>
-		</button>
-		<fieldset>
-			<legend>
-				<strong>Lessons</strong>
-			</legend>
-			<button>
-				<a href="lesson1/lesson1.html">Lesson 1</a>
-			</button>
-			<button>
-				<a href="lesson2/lesson2.html">Lesson 2</a>
-			</button>
-			<button>
-				<a href="lesson3/lesson3.html">Lesson 3</a>
-			</button>
-			<button>
-				<a href="lesson4/lesson4.html">Lesson 4</a>
-			</button>
-		</fieldset>
-	</body>
+				margin: 5px;
+                font-size: 0px;
+                margin: 15px;
+                background-color: grey;
+                color: yellowgreen;
+        }
+        strong{
+            color: red;
+            font-size: 32px;
+        }
+       fieldset{
+        padding: 50px;
+        text-align: center;
+       }
+ .text{
+
+    background: linear-gradient(to right, #ffe100 0%, #ff0800 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 55px;
+
+ }
+
+
+</style>
+    <title>HOME PAGE</title>
+</head>
+<body>
+  
+    <fieldset>
+        <legend>
+            <strong>Lessons</strong>
+        </legend>
+        <button>
+          <h2>  <a href="https://progcourse.github.io">Programing Course</a>
+        </h2></button>
+        <br>
+        <button>
+            <a href="lesson1/lesson1.html">Lesson 1</a>
+        </button>
+        <button>
+            <a href="lesson2/lesson2.html">Lesson 2</a>
+        </button>
+        <button>
+            <a href="lesson3/lesson3.html">Lesson3</a>
+        </button>
+        <button>
+            <a href="lesson4/lesson4.html">Lesson 4</a>
+        </button>
+        <h1 class="text">HELLO WORLD</h1>
+    </fieldset>
+ 
+</body>
 </html>
