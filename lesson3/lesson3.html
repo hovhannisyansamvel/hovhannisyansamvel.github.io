@@ -1,129 +1,122 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<title>Lesson 2</title>
-		
-		<style>
-			a {
-				text-decoration: none;
-			}
-			button {
-				padding: 5px;
-				margin: 5px; 
-			}
-			table {
-				border-collapse: collapse;
-				width: 100%;
-			}
-			th, td {
-				border: 1px solid #ddd;
-				text-align: left;
-				padding: 8px;
-			}
-
-			tr:nth-child(even) {
-				background-color: #f2f2f2;
-			}
-
-			tr:hover {
-				background-color: #ddd;
-			}
-		</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Lesson 3</title>
+	<style>
+		header {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+		}
+		nav {
+			background-color: #444;
+			color: #fff;
+			padding: 10px;
+		}
+		nav ul {
+			padding: 0;
+			margin: 0;
+		}
+		nav ul li {
+			display: inline;
+			margin: 10px;
+		}
+		section {
+			padding: 20px;
+		}
+		article {
+			background-color: #fff;
+			padding: 15px;
+			margin: 20px;
+		}
+		aside {
+			background-color: #ccc;
+			color: #333;
+			padding: 15px;
+		}
+		footer {
+			background-color: #333;
+			color: #fff;
+			padding: 20px;
+		}
+		a {
+			text-decoration: none;
+			font-size: 16px;
+			font-weight: bold;
+		}
+	</style>
 	</head>
 	<body>
-		<button>
-			<a href="../index.html">Home</a>
-		</button>
-		<form action="../index.html" method="POST">
-			<fieldset>
-				<legend>Information</legend>
-				<label for="name">Name:</label><br/>
-				<input type="text" id="name" name="name" required /><br/>
-				<label for="email">Email:</label><br/>
-				<input type="email" id="email" name="email" required /><br/>
-				<label for="password">Password:</label><br/>
-				<input type="password" id="password" name="email" required /><br/>
-				
-				<label for="country">Country:</label><br/>
-				<select id="country" name="country" required>
-					<option value="armenia">Armenia</option>
-					<option value="usa">United States</option>
-					<option value="france" selected>France</option>
-					<option value="russia">Russia</option>
-					<option value="england">England</option>
-				</select>
-			</fieldset>
+		
+		<header>
+		  <h1>Welcome to Our Website</h1>
+		</header>
 
-			<fieldset>
-				<legend>Languages</legend>
-				<input type="checkbox" id="armenian" name="languages[]" value="armenian"/>
-				<label for="armenian">Armenian</label><br/>
-				<input type="checkbox" id="english" name="languages[]" value="english"/>
-				<label for="english">English</label><br/>
-				<input type="checkbox" id="russian" name="languages[]" value="russian"/>
-				<label for="russian">Russian</label><br/>
-				<input type="checkbox" id="french" name="languages[]" value="french"/>
-				<label for="french">French</label><br/>
-			</fieldset>
+		<nav>
+		  <ul>
+			<li>
+				<button>
+					<a href="../home.html">Home</a>
+				</button>
+			</li>
+			<li>
+				<button>
+					<a href="#news">News</a>
+				</button>
+			</li>
+			<li>
+				<button>
+					<a href="#multimedia">Multimedia</a>
+				</button>
+			</li>
+			<li>
+				<button>
+					<a href="#contact">Contact</a>
+				</button>
+			</li>
+		  </ul>
+		</nav>
 
-			<fieldset>
-				<legend>Age</legend>
-				<input type="radio" id="0_18" name="age" value="0-18"/>
-				<label for="0_18">0-18</label>
-				<input type="radio" id="19_40" name="age" value="19-40"/>
-				<label for="19_40">19-40</label>
-				<input type="radio" id="41_60" name="age" value="41-60"/>
-				<label for="41_60">41-60</label>
-				<input type="radio" id="61_100" name="age" value="61-100"/>
-				<label for="61_100">61-100</label>
-			</fieldset>
-			
-			<fieldset>
-				<legend>Message</legend>
-				<textarea id="message" name="message" rows="4" required></textarea>
-			</fieldset>
-			
-			<input type="submit" value="Send"/>
-		</form>
-	
-		<table border="1">
-			<caption>Monthly Sales Report</caption>
-			<thead>
-				<tr>
-					<th>Month</th>
-					<th>Product A</th>
-					<th>Product B</th>
-					<th>Total Sales</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>January</td>
-					<td>$1000</td>
-					<td>$1500</td>
-					<td>$2500</td>
-				</tr>
-				<tr>
-					<td>February</td>
-					<td>$1200</td>
-					<td>$1600</td>
-					<td>$2800</td>
-				</tr>
-				<tr>
-					<td>March</td>
-					<td>$1300</td>
-					<td>$1700</td>
-					<td>$3000</td>
-				</tr>
-			</tbody>
-			<tfoot>
-				<tr>
-					<td>Total</td>
-					<td>$3500</td>
-					<td>$4800</td>
-					<td>$8300</td>
-				</tr>
-			</tfoot>
-		</table>
+		<section>
+		  <article id="news">
+			<h2>Latest News</h2>
+			<p>
+				Scientists Discover New Species of Orchid in the Amazon Rainforest
+				In a groundbreaking discovery, researchers have uncovered a new species of orchid flourishing in the heart of the Amazon rainforest. Named "Amazonia Radiant," this orchid species captivates with its vibrant hues and intricate petal patterns, marking a significant addition to the rich biodiversity of the region.
+				Dr. Elena Santos, lead botanist of the expedition, describes the finding as a testament to the Amazon's unparalleled ecological diversity. "The Amazon rainforest continues to reveal its secrets, underscoring the urgent need for its preservation," she states. The discovery underscores the importance of conservation efforts to safeguard these delicate ecosystems amidst mounting environmental challenges.
+				The "Amazonia Radiant" orchid's discovery serves as a reminder of the countless undiscovered species awaiting exploration in Earth's remaining wilderness areas. Scientists emphasize the critical role of conservation initiatives and sustainable practices in protecting these invaluable natural treasures for future generations.
+			</p>
+			<img src="image.jpg" alt="Nature Image" width="600px">
+		  </article>
+
+		  <aside id="multimedia">
+			<h2>Audio and Video</h2>
+			<audio controls>
+			  <source src="audio.mp3" type="audio/mpeg">
+			  Your browser does not support the audio element.
+			</audio>
+			<button>
+				<a href="audio.mp3" Download>Download</a>
+			</button>
+			<br/>
+			<video width="600px" controls>
+			  <source src="video.mp4" type="video/mp4">
+			  Your browser does not support the video element.
+			</video>
+			<button>
+				<a href="video.mp4" Download>Download</a>
+			</button>
+			<br/>
+			<iframe width="600" height="400" src="https://www.youtube.com/embed/BoXa3l8Ivkg?si=UNEql3AqBqUfuBfp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>			</div>
+		  </aside>
+		</section>
+
+		<footer id="contact">
+		  <p>&copy; 2024 Our Website. All rights reserved.</p>
+		</footer>
+
 	</body>
 </html>
